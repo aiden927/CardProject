@@ -1,0 +1,53 @@
+
+/**
+ * @author Yuanyi Yang
+ *
+ *         yuanyiya@buffalo.edu
+ */
+
+Tableau pile tests:
+
+Tableau piles in Ace's Up initially hold 1 card [2 points]
+start at AcesUp.GameTest line 23
+
+Ace's Up tableau pile method correctly determines if adding a specific card is legal or illegal. To receive points, your test cannot call two separate methods (e.g., one for when the card comes from the stock pile and one for when the card comes from another tableau) to perform this check. [4 points]
+start at AcesUp.GameTest line 28
+
+Ace's Up tableau pile method correctly determines if removing a specific card is legal or illegal. To receive points, your test cannot call two separate methods (e.g., one for when the card is being moved to the homecell pile and one for when the card is moved to another tableau pile) to perform this check. [4 points]
+start at AcesUp.GameTest line 47
+
+Adding card to Ace's Up tableau pile increases its number of cards and results in that card being the tableau pile's new top card [4 points]
+start at AcesUp.GameTest line 60
+
+Removing card from Ace's Up tableau pile decreases its number of cards and results in following card being the new top card [4 points]
+start at AcesUp.GameTest line 79
+
+
+Homecell pile tests:
+
+Homecell pile in Ace's Up initially holds 0 cards [2 points]
+start at AcesUp.GameTest line 103
+
+Ace's Up homecell pile correctly determines if adding a specific card is legal or illegal (e.g., always legal) [2 points]
+start at AcesUp.GameTest line 106
+
+Ace's Up homecell pile correctly returns if removing top card is legal or illegal (e.g., always illegal) [2 points]
+start at AcesUp.GameTest line 120
+
+Adding card to Ace's Up homecell pile increases its number of cards and results in that card being the homecell pile's new top card [2 points]
+start at AcesUp.GameTest line 126
+
+
+Stock pile tests:
+
+Ace's Up stock pile initially holds 48 cards [2 points]
+start at AcesUp.GameTest line 148
+
+Ace's Up stock pile correctly returns if adding a specific card is legal or illegal (e.g., always illegal) [2 points]
+start at AcesUp.GameTest line 151
+
+Ace's Up stock pile correctly returns if removing a specific card is legal or illegal (e.g., legal if the stock pile is not empty) [2 points]
+start at AcesUp.GameTest line 155
+
+Dealing cards from Ace's Up stock pile removes the top 4 cards, adds the removed cards to the tableau piles, and results in the 5th card being the new top card [2 points]
+start at AcesUp.GameTest line 168
